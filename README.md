@@ -70,11 +70,11 @@ option_settings:
     MVM_SECRET: This was set using an Environment property, change using AWS Console
     MVM_VALUE: This was set using an Environment property, change using AWS Console
 ```
-* Changed the Solution Stack to pure Java that is now supported by Beanstalk - Tomcat is embedded in the application
+* Changed the Solution Stack to Java 8
 ```
     <beanstalk.solutionStack>64bit Amazon Linux 2016.03 v2.1.1 running Java 8</beanstalk.solutionStack>
 ```
-* Added a property mapping for PORT: 8080 into ebextension so Beanstalk knows how to forward requests. Need this as no longer running a Tomcat stack.
+* Added a property mapping for PORT: 8080 into ebextension so Beanstalk knows how to forward requests. Gets configured automatically during deployment this way.
 * Added a couple of extra environment properties for the hell of it and to see what happens between redeploys when updated via AWS Console in between.
 * Removed application.properties from resources - all properties can be configured as environment variables. This is true for Docker builds also.
 * Added a timestamp to uploaded ZIP as collisions were causing issue. Need to sort this out!
