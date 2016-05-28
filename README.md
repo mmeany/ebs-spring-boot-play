@@ -3,8 +3,6 @@ Using Maven to build a Spring Boot Web Application and to deploy that applicatio
 
 For deployment, it builds on the example found here: https://java.awsblog.com/post/Tx32TLLUI5PY39/Deploying-Java-Applications-on-Elastic-Beanstalk-from-Maven
 
-For git flow goodness it builds on the example found here: http://www.sonatype.org/nexus/2016/04/25/gitflow-maven-and-ci-done-right-part-1-teaching-maven-new-tricks/
-
 Also useful:
 http://beanstalker.ingenieux.com.br/beanstalk-maven-plugin/usage.html
 http://beanstalker.ingenieux.com.br/beanstalk-maven-plugin/put-environment-mojo.html
@@ -23,9 +21,6 @@ Before running this example you will need to do the following:
  * Have created an S3 bucket for deployment archive
 * Have added AWS public & secret key into ~/.m2/settings.xml
   I recommend get things working with unencrypted password to start with, had some issues with encrypted one
-* Have installed git and git flow
-* Have access to a Nexus instance, I use a Dockerised version running locally
-* Add a staging repository to Nexus
 
 # What have I done?
 
@@ -101,8 +96,8 @@ option_settings:
 # TODO - Documentation
 1. Walk through setting up Maven settings.xml
 2. Walk through AWS configuration
-    a. IAM User
-    b. IAM Policy
-    c. Download IAM User key and secret
-    d. Adding the key to settings.xml
-    e. Create RSA key for ssh access to EC2 instances
+    * IAM User
+    * IAM Policy
+    * Download IAM User key and secret
+    * Adding the key to settings.xml
+    * Create RSA key for ssh access to EC2 instances
