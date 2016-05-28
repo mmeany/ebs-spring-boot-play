@@ -27,9 +27,9 @@
         <java.version>1.8</java.version>
 
         <!-- Format is: id::layout::url::uniqueVersion -->
-        <release.repository>releases::default::http://nexus/content/repositories/releases::false</release.repository>
-        <stage.repository>stage::default::http://nexus/content/repositories/staging::false</stage.repository>
-        <snapshot.repository>snapshots::default::http://nexus/content/repositories/snapshots::true</snapshot.repository>
+        <release.repository>releases::default::http://nexus:8081/content/repositories/releases::false</release.repository>
+        <stage.repository>stage::default::http://nexus:8081/content/repositories/staging::false</stage.repository>
+        <snapshot.repository>snapshots::default::http://nexus:8081/content/repositories/snapshots::true</snapshot.repository>
         <developmentBranchPattern>origin/develop</developmentBranchPattern>
     </properties>
 
