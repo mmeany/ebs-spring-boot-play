@@ -1,0 +1,1 @@
+web: java -server -XX:+UseParallelOldGC -XX:+UseParallelGC -XX:NewRatio=2 -XX:+AggressiveOpts -jar ${project.artifactId}-${project.version}.jar
